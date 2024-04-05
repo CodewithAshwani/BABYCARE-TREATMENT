@@ -17,10 +17,12 @@ BABYCARE-Treatment is a comprehensive web solution aimed at providing specialize
 **Key Features of the platform include:**
 
 **1. Appointment Scheduling:** Users can easily schedule appointments and access medical services conveniently.
+
 **2. User Interaction:** Users can connect with healthcare providers, access medical information, and participate in discussions through various channels.
+
 **3. Information Accessibility:** Patients and caregivers can access medical information anytime, anywhere, facilitating informed decision-making.
 
- The project involved the design and development of a user-friendly interface, backend database management, and integration of advanced technologies to enhance user experience and ensure seamless functionality. 
+The project involved the design and development of a user-friendly interface, backend database management, and integration of advanced technologies to enhance user experience and ensure seamless functionality. 
 From initial requirement analysis to final deployment, BABYCARE-Treatment embodies a holistic approach to infant healthcare, leveraging technology to deliver reliable and efficient solutions.
 
 **4. Process:**

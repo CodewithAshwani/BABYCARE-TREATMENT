@@ -29,9 +29,13 @@ From initial requirement analysis to final deployment, BABYCARE-Treatment embodi
 The project was approached systematically, with key phases outlined as follows:
 
 **1. Requirement Analysis:** Understanding client requirements, defining project scope, and outlining features.
+
 **2. Design and Development:** Creating wireframes, designing user interfaces, and implementing frontend and backend functionalities.
+
 **3. Testing:** Ensuring the reliability, usability, and security of the platform through rigorous testing procedures.
+
 **4. Deployment:** Deploying the web application and ensuring seamless integration with existing systems.
+
 **5. Maintenance:** Providing ongoing support, addressing bugs, and implementing updates as needed.
 
 **5. Tech Stack:**

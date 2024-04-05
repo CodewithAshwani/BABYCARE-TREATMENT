@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Free Dental Medical Hospital Website Template | Smarteyeapps.com</title>
+
+    <link rel="shortcut icon" href="{% static 'assets/images/fav.jpg' %}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawsom-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/slider/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/slider/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}" />
+    <style>
+        .li{
+            color: rgb(15, 11, 223);
+        }
+        .read{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+    <body>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 left-item">
+                        <ul>
+                            <li><b>Babycare Bradford Ltd </b></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block right-item">
+                        <ul>
+                             <li><i class="fas fa-envelope-square"></i> info@babycareonline.co.uk</li>
+                             <li><i class="fas fa-phone-square"></i> +441895823737</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="nav-head" class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 nav-img">
+                        <img src="{% static 'assets/images/logo.jpg' %}" alt="">
+                       <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                    </div>
+                    <div id="menu" class="col-md-9 d-none d-md-block nav-item">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="{% url 'core:about' %}">About Us</a></li>
+                            <li><a href="{% url 'core:services' %}">Services</a></li>
+                            <li><a href="{% url 'core:blog' %}">Blog</a></li>
+                            <li><a href="{% url 'core:team' %}">Our Team</a></li>
+                            <li><a href="{% url 'core:contact' %}">Contact Us</a></li>
+                            {% if request.user.is_authenticated %}
+                            <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
+                           
+                            {% else %}
+                            <li><a href="{% url 'accounts:login' %}">Login | SignIn</a></li>
+                            {% endif %}
+                           
+                      
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+  
+    {% block body %}
+    
+
+    {% endblock body %}
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h2>About Us</h2>
+                    <p>
+                        Baby Care Health in India have changed the mind-set of people in the country and has transformed the demand scenario considerably. Furthermore, there is a significant demand for high-quality baby products, since most people are staying in nuclear families now-a-days and have a single child. Therefore, they are prepared to spend a substantial amount. In the baby food segment, there is rising awareness among parents to fulfill nutritional requirements of their babies adequately.
+                    </p>
+                    <p>Parents, primarily among the working class population, are looking to compensate for the little time spent with their child by giving them the best with respect to their nutritional, hygiene or lifestyle-related requirements. Furthermore, the increase in disposable income, double income is empowering Indian parents across middle and upper classes to spend more on baby care products.... </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h2>Useful Links</h2>
+                    <ul class="list-unstyled link-list">
+                        <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
+                        <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Contact Us</h2>
+                    <address class="md-margin-bottom-40">
+                        Hill End Rd <br>
+                        Harefield, Uxbridge UB9 6JH, United Kingdom <br>
+                        London<br>
+                        Phone: +441895823737<br>
+                        Email: <a href="https://www.babycareonline.co.uk/contact-us/" class="">info@babycareonline.co.uk</a><br>
+                        Web: <a href="https://www.babycareonline.co.uk/contact-us/" class="">https://www.babycareonline.com</a>
+                    </address>
+
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+    <div class="copy">
+            <div class="container">
+                <a href="https://www.smarteyeapps.com/">2022 &copy; All Rights Reserved | Designed and Developed by The Biomed</a>
+                
+                <span>
+             
+                <a href="https://www.babycareonline.co.uk/"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://twitter.com/nurseryoutlet"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/BabycareBradfordLTD/"> <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/babycare_bradford_ltd/"><i class="fab fa-instagram"></i></a>
+               
+        </span>
+            </div>
+
+        </div>   
+    
+    </body>
+
+<script src="{% static 'assets/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/plugins/slider/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+<script src="{% static 'assets/js/script.js' %}"></script>
+
+
+
+</html>

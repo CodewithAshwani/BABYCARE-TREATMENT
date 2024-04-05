@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+  
+       <!--  ************************* Page Title Starts Here ************************** -->
+               <div class="page-nav no-margin row">
+                   <div class="container">
+                       <div class="row">
+                           <h2>Schedule Visit</h2>
+                           <ul>
+                               <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
+                               <li><i class="fas fa-angle-double-right"></i>Schedule Visit</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+       
+    <!-- ######## Page  Title End ####### -->
+       
+
+
+      <div class="row contact-rooo no-margin">
+        <div class="container">
+           <div class="row">
+               
+          
+            <div style="padding:20px" class="col-sm-6">
+            <h2 style="font-size:18px">Appointment Form</h2>
+            <form action="{% url 'core:schedule-visit' %}" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label>Enter Name :</label></div>
+                    <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm"  ></div>
+                </div>
+                <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label>Email Address :</label></div>
+                    <div class="col-sm-8"><input type="text" name="email" placeholder="Enter Email Address" class="form-control input-sm"  ></div>
+                </div>
+                 <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label>Enter Date:</label></div>
+                    <div class="col-sm-8"><input type="date" name="date" placeholder="Enter Date" class="form-control input-sm"  ></div>
+                </div>
+                <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label>Enter Time:</label></div>
+                    <div class="col-sm-8"><input type="time" name="time" placeholder="Enter Time" class="form-control input-sm"  ></div>
+                </div>
+                 <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label>Enter  Message:</label></div>
+                    <div class="col-sm-8">
+                      <textarea rows="5" placeholder="Enter Your Message" name="message" class="form-control input-sm"></textarea>
+                    </div>
+                </div>
+                 <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                    <div class="col-sm-8">
+                     <button class="btn btn-info btn-sm">Send Message</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+             <div class="col-sm-6">
+                    
+                  <div style="margin:50px" class="serv"> 
+                
+               
+             
+                              
+              
+          <h2 style="margin-top:10px;">Address</h2>
+
+          Hill End Rd <br>
+          Harefield, Uxbridge UB9 6JH, United Kingdom  <br>
+          London <br>
+          Phone:  +441895823737 <br>
+          Email: <a href="https://www.babycareonline.co.uk/contact-us/" class="">info@babycareonline.co.uk</a><br>
+          Web: <a href="https://www.babycareonline.co.uk/contact-us/" class="">https://www.babycareonline.com</a>
+
+ 
+       
+            
+                
+                
+              
+           </div>    
+                
+             
+         </div>
+
+            </div>
+        </div>
+        
+      </div>
+    
+        
+<!-- ################# Footer Starts Here#######################--->
+
+{% endblock body %}

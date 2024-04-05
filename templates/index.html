@@ -1,0 +1,276 @@
+
+  {% extends 'base.html' %}
+  {% load static %}
+  {% block body %}
+    <!-- ################# Slider Starts Here#######################--->
+     <div class="slider">
+        <!-- Set up your HTML -->
+        <div class="owl-carousel ">
+            <div class="slider-img">
+                <div class="item">
+                    <div class="slider-img"><img src="{% static 'assets/images/slider/slider-1.jpg' %}" alt=""></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                                <div class="slider-captions">
+                                    <h1 class="slider-title">Feeling stress or anxious?</h1>
+                                    <p class="slider-text hidden-xs">We can help you conquer a wide range of psychological and emotional problems.</p>
+                                    <a href="https://www.mybaba.com/5-therapies-beneficial-baby/" class="btn btn-info hidden-xs">View All Therapies</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-img"><img src="{% static 'assets/images/slider/slider-2.jpg' %}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                            <div class="slider-captions">
+                                <h1 class="slider-title">It's time for better help.</h1>
+                                <p class="slider-text hidden-xs">We can help you conquer a wide range of psychological and emotional problems.</p>
+                                <a href="{% url 'core:schedule-visit' %}" class="btn btn-info hidden-xs">Schedule A Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-img"> <img src="{% static 'assets/images/slider/slider-3.jpg' %}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                            <div class="slider-captions">
+                                <h1 class="slider-title">Meet our psychiatrists</h1>
+                                <p class="slider-text hidden-xs">Our psychiatrists are highly skilled to meet your unique needs.</p>
+                                <a href="https://www.logintohealth.com/doctors/india/psychiatrist" class="btn btn-info hidden-xs">Meet Psychiatrists</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+     <!-- ################# Health Care Here#######################--->
+     
+     <section class="health-care">
+         <div class="container">
+            <div class="row">
+                 <div class="col-md-3 col-sm-6 vd">
+                     <img src="assets/images/services/gallery_01.jpg" alt="">
+                     <h4>Premium Care</h4>
+                     <p>The amount you pay for your health insurance plan each month is called your “premium”. Think of your premium as a monthly subscription fee. You’ll only hear this term used to refer to your monthly bill.A health insurance premium is an upfront payment made on behalf of an individual or family to keep their health insurance policy active.</p>
+                     <button class="btn btn-info"><a  class="read" href="https://www.healthcare.com/premiums-21109">Readmore</a> 
+                        <i class="fas fa-arrow-right"></i></button>
+                 </div>
+                 <div class="col-md-3 col-sm-6 vd">
+                     <img src="assets/images/services/gallery_02.jpg" alt="">
+                     <h4>Powerful Medicine</h4>
+                     <p>In this pragmatic volume, Avorn sets out an impressive plan for the American health care system to get helpful drugs to those who need them, protect patients from dangerous side effects and keep costs within reasonable limits" Informative and witty" makes a compelling case for prescription sanity and shows how constructive changes."</p>
+                     <button class="btn btn-info"><a  class="read" href="http://www.powerfulmedicines.org/pages/1/index.htm">Readmore</a> <i class="fas fa-arrow-right"></i></button>
+                 </div>
+                 <div class="col-md-3 col-sm-6 vd">
+                     <img src="assets/images/services/gallery_03.jpg" alt="">
+                     <h4>Quality Equipments</h4>
+                     <p>Quality Medical Equipment ensures a strong and consistent workflow. Delays in essential procedures can have serious consequences. A machine that breaks down or works inaccurately can be a matter of life and death. Well-maintained machines and instruments also streamline hospital functioning and improve productivity.</p>
+                     <button class="btn btn-info"><a  class="read" href="https://www.glenmedsolutions.com/2022/04/01/the-importance-of-quality-medical-equipment-for-patient-care/">Readmore</a> <i class="fas fa-arrow-right"></i></button>
+                 </div>
+                 <div class="col-md-3 col-sm-6 vd">
+                     <img src="assets/images/services/gallery_04.jpg" alt="">
+                     <h4>Experience Docors</h4>
+                     <p>Doctors' illness experiences can deeply influence not only their perceptions of illness and roles but also their medical practice. Researchers and doctors have sought to understand what happens when doctors become patients. However, currently, literature reviews focused exclusively on their illness experiences are lacking.</p>
+                     <button class="btn btn-info"><a  class="read" href="https://pubmed.ncbi.nlm.nih.gov/31843394/">Readmore</a> 
+                        <i class="fas fa-arrow-right"></i></button>
+                 </div>
+            </div>
+            
+             
+         </div>
+     </section>
+     
+           
+     <!-- ################# Services Starts Here#######################--->
+     
+     <section class="our-services">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-7 col-sm-12">
+                     <div class="service-box">
+                         <div class=" d-flex">
+                            <div class="icon">
+                                 <i class="fas fa-hospital-alt"></i>
+                            </div>
+                            <div class="det">
+                                <b>Newest Technologies in Hospital</b>
+                                <p><b>1. Advanced Telemedicine</p></b>Advanced Telemedicine allows doctors to connect with their patients easily regardless of the location. It also enables doctors to provide patients with quality care and safety. Furthermore, its remote healthcare technology helps doctors securely connect to their patients via a mounting variety of apps and services through two-way video calls, smartphones, and privacy-protected communications.</p>
+                                <a  class="li "href="https://www.healthcareguys.com/2021/09/21/top-10-new-medical-technologies-of-2021/">Read more</a>
+                            </div>
+                             
+                         </div>
+                     </div>
+                      <div class="service-box">
+                         <div class=" d-flex">
+                            <div class="icon">
+                                 <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="det">
+                                <b>Newest Technologies in Doctors</b>
+                                <p><b>2. Data driven healthcare</p></b>Healthcare huge information market is expected to enroll $70 billion by 2025. As health data speeds up, it makes its requests. Opportunities for upgrading treatment choices and empowering members skyrockets. Nonetheless, the main hindrance has been a deficiency of connectivity. Data from one healthcare facility isn’t moved to and examined by the other. Coronavirus underscored the issue significantly more<p>
+                                    <a  class="li "href="https://www.healthcareguys.com/2021/09/21/top-10-new-medical-technologies-of-2021/">Read more</a>
+                            </div>
+                             
+                         </div>
+                     </div>
+                      <div class="service-box">
+                         <div class=" d-flex">
+                            <div class="icon">
+                                 <i class="fas fa-briefcase-medical"></i>
+                            </div>
+                            <div class="det">
+                                <b>Newest Technologies in First-Aid</b>
+                                <p><b>3.New Methods of Drug Development</p></b>The creation of numerous secure and reliable Covid-19 vaccines is even less than one year in history. One of the most outstanding scientific achievements in humanity’s civilization. The process was accelerated by regulation expediting and advancements in medical trial design. Digital clinical trials, held digitally, reduced the burden of engagement. The digital clinics merged with a genuine partnership. They could open the way for a promising future in developing drugs rather than competing among the drug industry..</p>
+                                <a  class="li "href="https://www.healthcareguys.com/2021/09/21/top-10-new-medical-technologies-of-2021/">Read more</a>
+                            </div>
+                             
+                         </div>
+                     </div>
+                      <div class="service-box">
+                         <div class=" d-flex">
+                            <div class="icon">
+                                 <i class="fas fa-capsules"></i>
+                            </div>
+                            <div class="det">
+                                <b>Newest Technologies in Medicine</b>
+                                <p><b>4. Nanomedicine</p></b>
+                                    It’s a branch of medicine that deals with the tools of nanotechnology to help prevent diseases treatment. Similarly, Nanomedicine incorporates the use of nanoscale materials to foil any growing conditions in a living organism. But, more importantly, this nanomedicine has applications that sense and diagnose any disease in our bodies.
+                                </p>
+                                <a  class="li "href="https://www.healthcareguys.com/2021/09/21/top-10-new-medical-technologies-of-2021/">Read more</a>
+                            </div>
+                             
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-md-5 col-sm-12">
+                     <div class="imagr-box">
+                         <img src="{% static 'assets/images/side-image.jpg' %}" alt="">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     
+     <!-- ################# AppointmentStarts Here#######################--->
+
+    <div class="professional-details">
+        <div class="layy">
+            <div class="container">
+                <div class="title-another row">
+                    <h4>We Are Professionals</h4>
+                    <h2>Professional Approach</h2>
+                    <h3>and Quality Services</h3>
+                    <div class="btn-ro">
+                        <button class="btn btn-default">Book an Appointment</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ################# Our Team Starts Here#######################--->
+    <section class="our-team">
+        <div class="container">
+            <div class="inner-title row">
+                <h2>Our Team</h2>
+                <p>Take a look at our Team</p>
+            </div>
+            <div class="row team-row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-usr">
+                        <img src="https://www.topdoctors.co.uk/files/Doctor/profile/prof_2975_20210722151419.png" alt="">
+                        <div class="det-o">
+                            <h4><a href="https://www.topdoctors.co.uk/doctor/miles-levy">Dr. Miles Levy</a></h4>
+                            <i>Endocrinologist</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-usr">
+                        <img src="https://www.topdoctors.co.uk/files/Doctor/profile/prof_3121_20210927110349.png" alt="">
+                        <div class="det-o">
+                            <h4><a href="https://www.topdoctors.co.uk/doctor/antonios-athanasiou">Dr. Antonios Athan</a></h4>
+                            <i>Surgeon</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-usr">
+                        <img src="https://www.topdoctors.co.uk/files/Doctor/profile/prof_2504_20220426165751.png" alt="">
+                        <div class="det-o">
+                            <h4><a href="https://www.topdoctors.co.uk/doctor/patrick-lintott/">Mrs. Patrick Lintott</a></h4>
+                            <i>Vascular Surgeont</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-usr">
+                        <img src="https://www.topdoctors.co.uk/files/Doctor/profile/5981dddd-44a0-45a5-859d-73ee25bbab96.png" alt="">
+                        <div class="det-o">
+                            <h4><a href="https://www.topdoctors.co.uk/doctor/nicholas-parkhouse"> Mr. Nicholas Parkhou</a></h4>
+                            <i>Plastic Surgeon</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+   <!--  ************************* Blog Starts Here ************************** -->
+            <div class="blog">
+               <div class="row session-title">
+                   <h2>Latest Blog</h2>
+                   <p>We can talk for a long time about advantages of our Dental clinic before other medical treatment facilities.
+But you can read the following facts in order to make sure of all pluses of our clinic:</p>
+               </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="blog-singe no-margin row">
+                                <div class="col-sm-5 blog-img-tab">
+                                    <img src="{% static 'assets/images/blog/blog_01.jpg' %}" alt="">
+                                </div>
+                                <div class="col-sm-7 blog-content-tab">
+                                    <h2>Why Primary treatment is important ?</h2>
+                                    <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>(12)</small></i>  <i class="fas fa-comments"><small>(12)</small></i></p>
+                                    <p class="blog-desic">Primary medical care is important for everyone, as it ensures good health and the prevention of disease.Primary medical care is not just about diagnosing and preventing diseases and other health conditions. Providers also focus their efforts on ensuring that patients are in good health. </p>
+                                    <a href="https://ceramicandporcelainproperties.com/qa/why-primary-treatment-is-important.html">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="blog-singe no-margin row">
+                                <div class="col-sm-5 blog-img-tab">
+                                    <img src="{% static 'assets/images/blog/blog_02.jpg' %}" alt="">
+                                </div>
+                                <div class="col-sm-7 blog-content-tab">
+                                    <h2>Why Secondary treatment is important ?</h2>
+                                    <p><i class="fas fa-user"><small>Admin</small></i>  <i class="fas fa-eye"><small>(12)</small></i>  <i class="fas fa-comments"><small>(12)</small></i></p>
+                                    <p class="blog-desic">Secondary treatment is the portion of the sewage treatment process in which microorganisms remove dissolved pollutants from liquid sewage after solids have been removed.Secondary care simply means you will be taken care of by someone who has more specific expertise in what is ailing you.  </p>
+                                    <a href="https://thebridgemarbella.com/why-is-secondary-treatment-so-important-to-beat-addiction/">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- ######## Blog End ####### -->
+        
+           <!-- ################# Footer Starts Here#######################--->
+
+
+           {% endblock body %}
